@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- removing hediffs (e.g. diseases) -->
+
+  <ExtractScuttlebug.label>extract larvae</ExtractScuttlebug.label>
+  <ExtractScuttlebug.description>Surgically removes Space Worm larvae from the host.</ExtractScuttlebug.description>
+  <ExtractScuttlebug.jobString>Extracting larvae.</ExtractScuttlebug.jobString>
+  <ExtractScuttlebug.successfullyRemovedHediffMessage>{0} has successfully extracted {1}'s larvae.</ExtractScuttlebug.successfullyRemovedHediffMessage>
+
+  <ImplantScuttlebug.label>implant larvae</ImplantScuttlebug.label>
+  <ImplantScuttlebug.description>Implants Space Worm Larvae into Host.</ImplantScuttlebug.description>
+  <ImplantScuttlebug.jobString>Implanting Space Worm larvae.</ImplantScuttlebug.jobString>
+
+
+</LanguageData>
