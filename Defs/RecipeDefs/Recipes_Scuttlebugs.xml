@@ -10,6 +10,7 @@
     <workAmount>4500</workAmount>
     <removesHediff>ScuttlebugInfection</removesHediff>
     <successfullyRemovedHediffMessage>{0} has successfully extracted {1}'s larvae.</successfullyRemovedHediffMessage>
+    <dontShowIfAnyIngredientMissing>True</dontShowIfAnyIngredientMissing>
     <surgerySuccessChanceFactor>0.7</surgerySuccessChanceFactor>
     <deathOnFailedSurgeryChance>0.25</deathOnFailedSurgeryChance>
     <skillRequirements>
@@ -45,6 +46,7 @@
     <workerClass>Recipe_InstallImplant</workerClass>
     <jobString>Implanting Space Worm larvae.</jobString>
     <workAmount>3700</workAmount>
+    <dontShowIfAnyIngredientMissing>True</dontShowIfAnyIngredientMissing>
     <surgerySuccessChanceFactor>0.80</surgerySuccessChanceFactor>
     <deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
     <skillRequirements>
