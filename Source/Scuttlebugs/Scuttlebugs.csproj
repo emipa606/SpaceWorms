@@ -51,8 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InfectedRefugeePod.cs" />
+    <Compile Include="Mod.cs" />
     <Compile Include="QueenWorm.cs" />
     <Compile Include="Scuttlebugs.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="WorldComp.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup />
