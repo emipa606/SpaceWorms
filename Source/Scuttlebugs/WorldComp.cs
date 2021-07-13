@@ -1,5 +1,4 @@
-﻿using System;
-using RimWorld.Planet;
+﻿using RimWorld.Planet;
 using Verse;
 
 namespace Scuttlebugs
@@ -14,7 +13,7 @@ namespace Scuttlebugs
         public override void FinalizeInit()
         {
             base.FinalizeInit();
-            Log.Message("Space Worms - Settings loaded", false);
+            Log.Message("Space Worms - Settings loaded");
             ScuttlebugsSettings.ChangeDefPost();
         }
     }

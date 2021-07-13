@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <Scuttlebug.label>Space Worm</Scuttlebug.label>
   <Scuttlebug.labelPlural>Space Worms</Scuttlebug.labelPlural>
   <Scuttlebug.lifeStages.0.label>Space Worm</Scuttlebug.lifeStages.0.label>
@@ -25,6 +24,4 @@
   <Scuttlebug.labelMalePlural>male Space Worms</Scuttlebug.labelMalePlural>
   <Scuttlebug.labelFemale>female Space Worm</Scuttlebug.labelFemale>
   <Scuttlebug.labelFemalePlural>female Space Worms</Scuttlebug.labelFemalePlural>
-
-
 </LanguageData>
