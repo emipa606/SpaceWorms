@@ -1,25 +1,16 @@
 # SpaceWorms
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of Demeggys mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1078857582
 
 - Added mod-setting for changing the incident basechance
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-	[tr]
-		[td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/SpaceWorms]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-	[/tr]
-[/table]
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 
 Rimworld Build: 1.0
@@ -40,23 +31,23 @@ Future Plans:
 How does the mod work?
 
 - An escape pod with an infected survivor crashlands. With a chance of it gestating inside Refugee Pod survivors, it only takes one infected human to wipe a Colony out entirely if not dealt with quickly...
-- If your colony has researched the Level 4 technology of Xenobiology, they&apos;ll be able to automatically see the Parasitic Infection on the survivors health records, and surgically extract the larvae from the patient with the right medical skills and supplies... 
+- If your colony has researched the Level 4 technology of Xenobiology, they'll be able to automatically see the Parasitic Infection on the survivors health records, and surgically extract the larvae from the patient with the right medical skills and supplies... 
 If not, the infected host will birth a brand new Space Worm violently within 24 hours, dying in the process, with the new breed on the hunt for a new host...
 
 Tips:
 
 - A host is impregnated the second a Space Worm successfully bites a human (the Space Worm will die during impregnation). The human will have approximately 24 hours in-game to be diagnosed and operated on before the larvae breeches, killing the Host in the process.
-- Hosts in Stasis can withhold the gestation process, so if you don&apos;t have the tech researched - put &apos;em on ice!
+- Hosts in Stasis can withhold the gestation process, so if you don't have the tech researched - put 'em on ice!
 - Space Worms are fast, but weak. When born, their instant bloodlust will drive them to impregnate the nearest human host - so be prepared with quarantine wards and rapid weapons!
 
 Known Bugs/Incompatibilities:
 
 - Gestation period is approximately between 12 and 24 hours
-- World travel whilst impregnated hasn&apos;t been fully tested, but may cause issues
+- World travel whilst impregnated hasn't been fully tested, but may cause issues
 - Larvae implantation has been temporarily removed - this is to allow for some changes to the Worm Queen progress currently in WIP
 
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 

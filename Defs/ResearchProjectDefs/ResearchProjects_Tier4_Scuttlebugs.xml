@@ -1,9 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ResearchTabDef>
-    <defName>Scuttlebugs_Research</defName>
-    <label>Xenobiology</label>
-  </ResearchTabDef>
   <ResearchProjectDef>
     <defName>ScuttlebugsBiology</defName>
     <label>Xenobiology</label>
@@ -18,7 +14,7 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
-    <researchViewX>11</researchViewX>
-    <researchViewY>0.8</researchViewY>
+    <researchViewX>14.00</researchViewX>
+    <researchViewY>4.30</researchViewY>
   </ResearchProjectDef>
 </Defs>
