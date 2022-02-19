@@ -6,6 +6,7 @@ Update of Demeggys mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1078857582
 
 - Added mod-setting for changing the incident basechance
+- For a higher quality texture, try  https://steamcommunity.com/sharedfiles/filedetails/?id=2739609830] Mashed Space Worms Re-texture by SirMashedPotato
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 

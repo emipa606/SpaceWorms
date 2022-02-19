@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <HugsLib.UpdateFeatureDef Abstract="true" Name="UpdateFeatureBase">
+  <HugsLib.UpdateFeatureDef Abstract="true" Name="SpaceWorms_UpdateFeatureBase">
     <modNameReadable>SpaceWorms</modNameReadable>
     <linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2105322804</linkUrl>
   </HugsLib.UpdateFeatureDef>
-  <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+  <HugsLib.UpdateFeatureDef ParentName="SpaceWorms_UpdateFeatureBase">
     <defName>SpaceWorms_1_0_3_0</defName>
     <assemblyVersion>1.0.3.0</assemblyVersion>
     <content>There is now a setting to modify the BaseChance of the Space Worm-incident. Note that this is just the base-chance, storyteller will modify this depending on difficulty and storyteller-type.
