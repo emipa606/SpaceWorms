@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DamageDef>
+    <defName>ScuttlebugBite</defName>
+    <label>impregnated</label>
+    <workerClass>Scuttlebugs.Scuttlebugs_DamageWorker</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been mauled to death.</deathMessage>
+    <hediff>ScuttlebugInfection</hediff>
+    <hediffSkin>Bite</hediffSkin>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <harmsHealth>false</harmsHealth>
+    <biteDamageMultiplier>0</biteDamageMultiplier>
+    <impactSoundType>Slice</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+  </DamageDef>
+</Defs>

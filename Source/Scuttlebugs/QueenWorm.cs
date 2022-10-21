@@ -1,8 +1,7 @@
 ﻿using Verse;
 
-namespace Scuttlebugs
+namespace Scuttlebugs;
+
+public class QueenWorm : ThingWithComps
 {
-    public class QueenWorm : ThingWithComps
-    {
-    }
 }

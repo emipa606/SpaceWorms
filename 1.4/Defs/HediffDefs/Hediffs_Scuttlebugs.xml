@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef Name="ScuttlebugInfectionBase" Abstract="True">
+    <hediffClass>Scuttlebugs.ScuttlebugsHediff</hediffClass>
+    <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+    <initialSeverity>0.001</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Discoverable">
+        <sendLetterWhenDiscovered>false</sendLetterWhenDiscovered>
+      </li>
+    </comps>
+  </HediffDef>
+  <HediffDef ParentName="ScuttlebugInfectionBase">
+    <defName>ScuttlebugInfection</defName>
+    <label>Parasitic Infection</label>
+    <description>Parasitic Infection</description>
+    <makesSickThought>true</makesSickThought>
+    <tendable>false</tendable>
+    <stages>
+      <li>
+        <vomitMtbDays>1</vomitMtbDays>
+        <hungerRateFactor>10</hungerRateFactor>
+        <minSeverity>0.50</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.5</offset>
+          </li>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>0.5</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  <HediffDef ParentName="ScuttlebugInfectionBase">
+    <defName>ScuttlebugQueenInfection</defName>
+    <label>Blistered skin</label>
+    <description>Blistered skin</description>
+    <makesSickThought>true</makesSickThought>
+    <tendable>false</tendable>
+    <stages>
+      <li>
+        <vomitMtbDays>1</vomitMtbDays>
+        <hungerRateFactor>20</hungerRateFactor>
+        <minSeverity>0.50</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.75</offset>
+          </li>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>1.0</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

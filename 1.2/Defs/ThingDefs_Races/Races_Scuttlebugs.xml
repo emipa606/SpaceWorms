@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Abstract="True" ParentName="AnimalThingBase" Name="BaseScuttlebug">
+    <statBases>
+      <ToxicSensitivity>0</ToxicSensitivity>
+    </statBases>
+    <race>
+      <fleshType>Insectoid</fleshType>
+      <bloodDef>Filth_BloodInsect</bloodDef>
+      <!--<leatherColor>(112,82,65)</leatherColor>
+      <leatherLabel>Wormskin</leatherLabel>-->
+      <meatColor>(160,150,140)</meatColor>
+      <foodType>OmnivoreAnimal, AnimalProduct</foodType>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.025</manhunterOnTameFailChance>
+    </race>
+  </ThingDef>
+  <!-- ====================================================== -->
+  <BodyPartGroupDef>
+    <defName>FaceTeeth</defName>
+    <label>teeth</label>
+  </BodyPartGroupDef>
+  <ThingDef ParentName="BaseScuttlebug">
+    <defName>Scuttlebug</defName>
+    <thingClass>Scuttlebugs.ScuttlebugClass</thingClass>
+    <label>Space Worm</label>
+    <description>An extra-terrestrial parasite, the Space Worm has been given its nickname by Colonists across the Rimworlds for the way in which it slithers towards its prey. Once a parasite has successfully infected its prey, the prey (host) will undergo a series of symptoms from nausea to unconciousness. After 24 hours, infant Space Worms will hatch from the host, killing them in the process.</description>
+    <statBases>
+      <MoveSpeed>5.7</MoveSpeed>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <MarketValue>100</MarketValue>
+      <LeatherAmount>3</LeatherAmount>
+    </statBases>
+    <tools>
+      <li>
+        <label>face teeth</label>
+        <capacities>
+          <li>ScuttlebugCapacity</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <race>
+      <body>Snake</body>
+      <baseBodySize>0.2</baseBodySize>
+      <baseHungerRate>0.10</baseHungerRate>
+      <baseHealthScale>0.4</baseHealthScale>
+      <useMeatFrom>Megaspider</useMeatFrom>
+      <wildness>0.95</wildness>
+      <lifeExpectancy>10</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectJuvenile</def>
+          <minAge>0.03</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>0.4</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Megascarab_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+  </ThingDef>
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Scuttlebug</defName>
+    <label>Space Worm</label>
+    <race>Scuttlebug</race>
+    <combatPower>30</combatPower>
+    <ecoSystemWeight>0.25</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Scuttlebug/scuttlebug</texPath>
+          <drawSize>1</drawSize>
+          <color>(114,107,84)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Spelopede/Dessicated_Spelopede</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Scuttlebug/scuttlebug</texPath>
+          <drawSize>1.25</drawSize>
+          <color>(114,107,84)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Spelopede/Dessicated_Spelopede</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Scuttlebug/scuttlebug</texPath>
+          <drawSize>1.5</drawSize>
+          <color>(114,107,84)</color>
+          <shadowData>
+            <volume>(0.2, 0.3, 0.2)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Spelopede/Dessicated_Spelopede</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+</Defs>

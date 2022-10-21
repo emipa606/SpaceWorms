@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SpWo.BaseChance>Space Worms incident base-chance: {0}</SpWo.BaseChance>
+  <SpWo.BaseChanceInfo>Default value is 1.5</SpWo.BaseChanceInfo>
+  <SpWo.Chance>Chance</SpWo.Chance>
+  <SpWo.CurrentModVersion>Installed mod-version: {0}</SpWo.CurrentModVersion>
+</LanguageData>

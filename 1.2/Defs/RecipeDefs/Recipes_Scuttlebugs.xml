@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- removing hediffs (e.g. diseases) -->
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>ExtractScuttlebug</defName>
+    <label>extract larvae</label>
+    <description>Surgically removes Space Worm larvae from the host.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Extracting larvae.</jobString>
+    <workAmount>4500</workAmount>
+    <removesHediff>ScuttlebugInfection</removesHediff>
+    <successfullyRemovedHediffMessage>{0} has successfully extracted {1}'s larvae.</successfullyRemovedHediffMessage>
+    <dontShowIfAnyIngredientMissing>True</dontShowIfAnyIngredientMissing>
+    <surgerySuccessChanceFactor>0.7</surgerySuccessChanceFactor>
+    <deathOnFailedSurgeryChance>0.25</deathOnFailedSurgeryChance>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>6</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>MedicineHerbal</li>
+      </disallowedThingDefs>
+    </fixedIngredientFilter>
+    <!--<products>
+			<ScuttlebugLarvae>1</ScuttlebugLarvae>
+		</products> -->
+    <researchPrerequisite>ScuttlebugsBiology</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>ImplantScuttlebug</defName>
+    <label>implant larvae</label>
+    <description>Implants Space Worm Larvae into Host.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Implanting Space Worm larvae.</jobString>
+    <workAmount>3700</workAmount>
+    <dontShowIfAnyIngredientMissing>True</dontShowIfAnyIngredientMissing>
+    <surgerySuccessChanceFactor>0.80</surgerySuccessChanceFactor>
+    <deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ScuttlebugLarvae</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>Joywire</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ScuttlebugInfection</addsHediff>
+  </RecipeDef>
+</Defs>

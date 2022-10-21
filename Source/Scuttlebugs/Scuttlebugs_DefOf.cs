@@ -1,11 +1,10 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace Scuttlebugs
+namespace Scuttlebugs;
+
+[DefOf]
+public class Scuttlebugs_DefOf
 {
-    [DefOf]
-    public class Scuttlebugs_DefOf
-    {
-        public static PawnKindDef Scuttlebug;
-    }
+    public static PawnKindDef Scuttlebug;
 }
