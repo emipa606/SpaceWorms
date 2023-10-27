@@ -22,7 +22,7 @@ internal class ScuttlebugsMod : Mod
     {
         settings = GetSettings<ScuttlebugsSettings>();
         currentVersion =
-            VersionFromManifest.GetVersionFromModMetaData(ModLister.GetActiveModWithIdentifier("Mlie.SpaceWorms"));
+            VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
     }
 
     /// <summary>
