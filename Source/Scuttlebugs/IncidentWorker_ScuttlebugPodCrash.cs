@@ -40,7 +40,7 @@ public class IncidentWorker_ScuttlebugPodCrash : IncidentWorker
 
         //Give the pawn the Scuttlebug Infection
         var torso = pawn.health.hediffSet.GetNotMissingParts().First(bpr => bpr.def == BodyPartDefOf.Torso);
-        var unused = pawn.health.hediffSet.GetNotMissingParts().First(bpr => bpr.def == BodyPartDefOf.Head);
+        _ = pawn.health.hediffSet.GetNotMissingParts().First(bpr => bpr.def == BodyPartDefOf.Head);
         pawn.health.AddHediff(HediffDef.Named("ScuttlebugInfection"), torso);
 
         return true;

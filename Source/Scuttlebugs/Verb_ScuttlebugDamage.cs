@@ -57,12 +57,12 @@ public class Verb_ScuttlebugDamage : Verb_MeleeAttackDamage
         }
 
         var extraDamages = Enumerable.Empty<ExtraDamage>();
-        if (verbProps.surpriseAttack is { extraMeleeDamages: { } })
+        if (verbProps.surpriseAttack is { extraMeleeDamages: not null })
         {
             extraDamages = extraDamages.Concat(verbProps.surpriseAttack.extraMeleeDamages);
         }
 
-        if (tool is { surpriseAttack: { } } && !tool.surpriseAttack.extraMeleeDamages.NullOrEmpty())
+        if (tool is { surpriseAttack: not null } && !tool.surpriseAttack.extraMeleeDamages.NullOrEmpty())
         {
             extraDamages = extraDamages.Concat(tool.surpriseAttack.extraMeleeDamages);
         }

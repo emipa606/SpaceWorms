@@ -9,13 +9,13 @@ public class Scuttlebugs_DamageWorker : DamageWorker
     //public override float Apply(DamageInfo dinfo, Thing thing)
     public override DamageResult Apply(DamageInfo dinfo, Thing thing)
     {
-        if (!(thing is Pawn pawn))
+        if (thing is not Pawn pawn)
         {
             return base.Apply(dinfo, thing);
         }
 
         //return base.Apply(dinfo, thing);
-        var unused = pawn; //scuttlebug Pawn
+        _ = pawn;
 
         var result = base.Apply(dinfo, pawn);
 
