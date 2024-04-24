@@ -5,4 +5,18 @@
   <SpWo.BaseChanceInfo>默认值为1.5</SpWo.BaseChanceInfo>
   <SpWo.Chance>机会</SpWo.Chance>
   <SpWo.CurrentModVersion>已安装的mod-version。{0}</SpWo.CurrentModVersion>
+  <SpWo.SpawnPawnEnemy>启用在生成的敌人中产生感染</SpWo.SpawnPawnEnemy>
+  <SpWo.SpawnPawnAlly>启用在生成的盟友中产生感染</SpWo.SpawnPawnAlly>
+  <SpWo.SpawnPawnEnemyInfo>这将使突袭中的敌人有随机几率已被感染</SpWo.SpawnPawnEnemyInfo>
+  <SpWo.SpawnPawnAllyInfo>这样，交易员或访客就有可能已经受到感染。</SpWo.SpawnPawnAllyInfo>
+  <SpWo.SpawnPawnEnemyChance>敌人在出生时被感染的几率：{0}。</SpWo.SpawnPawnEnemyChance>
+  <SpWo.SpawnPawnEnemyChanceInfo>默认值为 5.0</SpWo.SpawnPawnEnemyChanceInfo>
+  <SpWo.SpawnPawnAllyChance>商人或游客在产卵时被感染的几率：{0}。</SpWo.SpawnPawnAllyChance>
+  <SpWo.SpawnPawnAllyChanceInfo>默认值为 2.5</SpWo.SpawnPawnAllyChanceInfo>
+  <SpWo.ApplyToOnlyHumanlike>允许感染非人类棋子</SpWo.ApplyToOnlyHumanlike>
+  <SpWo.ApplyToOnlyHumanlikeInfo>允许感染动物、昆虫等除机械体或自身以外的任何物体</SpWo.ApplyToOnlyHumanlikeInfo>
+  <SpWo.PreventInfectSource>防止再次感染虫源</SpWo.PreventInfectSource>
+  <SpWo.PreventInfectSourceInfo>这将修复蠕虫产卵并立即重新瞄准宿主，导致宿主持续受到感染的问题，只有在咬伤感染率为 100% 时才需要这样做</SpWo.PreventInfectSourceInfo>
+  <SpWo.ChanceOfInfectionBite>蠕虫病毒感染目标的几率：{0}。</SpWo.ChanceOfInfectionBite>
+  <SpWo.ChanceOfInfectionBiteInfo>最初的修改是 100%，但这一修改允许将蠕虫配置为每次攻击目标时都有等 25% 的感染几率</SpWo.ChanceOfInfectionBiteInfo>
 </LanguageData>

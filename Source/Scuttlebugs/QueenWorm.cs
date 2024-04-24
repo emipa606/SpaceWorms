@@ -2,6 +2,4 @@
 
 namespace Scuttlebugs;
 
-public class QueenWorm : ThingWithComps
-{
-}
+public class QueenWorm : ThingWithComps;

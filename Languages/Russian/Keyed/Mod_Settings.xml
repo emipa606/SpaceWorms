@@ -5,4 +5,18 @@
   <SpWo.BaseChanceInfo>Значение по умолчанию - 1,5</SpWo.BaseChanceInfo>
   <SpWo.Chance>Шанс</SpWo.Chance>
   <SpWo.CurrentModVersion>Установленная версия мода: {0}</SpWo.CurrentModVersion>
+  <SpWo.SpawnPawnEnemy>Включить порождение инфекций в генерируемых врагах</SpWo.SpawnPawnEnemy>
+  <SpWo.SpawnPawnAlly>Включить порождение инфекций у генерируемых союзников</SpWo.SpawnPawnAlly>
+  <SpWo.SpawnPawnEnemyInfo>Это дает случайный шанс, что враги в рейдах уже заражены.</SpWo.SpawnPawnEnemyInfo>
+  <SpWo.SpawnPawnAllyInfo>Это дает случайный шанс, что торговец или посетитель уже заражен.</SpWo.SpawnPawnAllyInfo>
+  <SpWo.SpawnPawnEnemyChance>Вероятность того, что враг будет заражен при спауне: {0}</SpWo.SpawnPawnEnemyChance>
+  <SpWo.SpawnPawnEnemyChanceInfo>Значение по умолчанию - 5,0</SpWo.SpawnPawnEnemyChanceInfo>
+  <SpWo.SpawnPawnAllyChance>Вероятность того, что торговец или посетитель будет заражен на спауне: {0}</SpWo.SpawnPawnAllyChance>
+  <SpWo.SpawnPawnAllyChanceInfo>Значение по умолчанию - 2,5</SpWo.SpawnPawnAllyChanceInfo>
+  <SpWo.ApplyToOnlyHumanlike>Разрешить заражение нечеловекоподобных пешек</SpWo.ApplyToOnlyHumanlike>
+  <SpWo.ApplyToOnlyHumanlikeInfo>Позволяет заражать животных, насекомых и все остальное, кроме мехов или себя самого</SpWo.ApplyToOnlyHumanlikeInfo>
+  <SpWo.PreventInfectSource>Предотвратите повторное заражение источника червей</SpWo.PreventInfectSource>
+  <SpWo.PreventInfectSourceInfo>Это исправляет появление червей и их мгновенное повторное нацеливание на хозяина, в результате чего они остаются зараженными. Это необходимо только в том случае, если уровень заражения при укусе составляет 100%.</SpWo.PreventInfectSourceInfo>
+  <SpWo.ChanceOfInfectionBite>Вероятность того, что червь заразит цель: {0}</SpWo.ChanceOfInfectionBite>
+  <SpWo.ChanceOfInfectionBiteInfo>В оригинальном моде это 100%, но этот мод позволяет настроить червя на 25%-ный шанс заражения при каждой атаке на цель.</SpWo.ChanceOfInfectionBiteInfo>
 </LanguageData>

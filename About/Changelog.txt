@@ -1,5 +1,10 @@
 # Changelog for SpaceWorms
 
+1.5.1 - Lots of new features from Ferris
+Cleaned up the settings
+Used DeepL to update translations for ChineseSimplified, French, German, Russian
+
+
 1.5.0 - Mod updated for 1.5 and passed autotests
 
 

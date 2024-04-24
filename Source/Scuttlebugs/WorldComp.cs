@@ -9,6 +9,6 @@ internal class WorldComp(World world) : WorldComponent(world)
     {
         base.FinalizeInit();
         Log.Message("Space Worms - Settings loaded");
-        ScuttlebugsSettings.ChangeDefPost();
+        ScuttlebugsMod.Instance.Settings.ChangeDef();
     }
 }

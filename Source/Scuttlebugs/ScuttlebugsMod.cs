@@ -8,11 +8,7 @@ namespace Scuttlebugs;
 internal class ScuttlebugsMod : Mod
 {
     private static string currentVersion;
-
-    /// <summary>
-    ///     The private settings
-    /// </summary>
-    private ScuttlebugsSettings settings;
+    public static ScuttlebugsMod Instance;
 
     /// <summary>
     ///     Cunstructor
@@ -20,27 +16,16 @@ internal class ScuttlebugsMod : Mod
     /// <param name="content"></param>
     public ScuttlebugsMod(ModContentPack content) : base(content)
     {
-        settings = GetSettings<ScuttlebugsSettings>();
-        currentVersion =
-            VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
+        Instance = this;
+        Settings = GetSettings<ScuttlebugsSettings>();
+        currentVersion = VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
     }
 
     /// <summary>
-    ///     The instance-settings for the mod
+    ///     The private settings
     /// </summary>
-    internal ScuttlebugsSettings Settings
-    {
-        get
-        {
-            if (settings == null)
-            {
-                settings = GetSettings<ScuttlebugsSettings>();
-            }
+    internal ScuttlebugsSettings Settings { get; }
 
-            return settings;
-        }
-        set => settings = value;
-    }
 
     /// <summary>
     ///     The title for the mod-settings
@@ -58,13 +43,55 @@ internal class ScuttlebugsMod : Mod
     /// <param name="rect"></param>
     public override void DoSettingsWindowContents(Rect rect)
     {
-        settings.ChangeDef();
         var listing_Standard = new Listing_Standard();
         listing_Standard.Begin(rect);
-        listing_Standard.Label("SpWo.BaseChance".Translate(ScuttlebugsSettings.IncidentChance), -1,
+        listing_Standard.Label("SpWo.BaseChance".Translate(Settings.IncidentChance), -1,
             "SpWo.BaseChanceInfo".Translate());
-        ScuttlebugsSettings.IncidentChance = Widgets.HorizontalSlider(listing_Standard.GetRect(20),
-            ScuttlebugsSettings.IncidentChance, 0, 10f, false, "SpWo.Chance".Translate(), null, null, 0.01f);
+        Settings.IncidentChance = Widgets.HorizontalSlider(listing_Standard.GetRect(20),
+            Settings.IncidentChance, 0, 10f, false, "SpWo.Chance".Translate(), null, null, 0.01f);
+
+        listing_Standard.Gap();
+        listing_Standard.CheckboxLabeled("SpWo.SpawnPawnEnemy".Translate(),
+            ref Settings.ApplyToAllSpawnedPawnsEnemy, "SpWo.SpawnPawnEnemyInfo".Translate());
+        if (Settings.ApplyToAllSpawnedPawnsEnemy)
+        {
+            listing_Standard.Label(
+                "SpWo.SpawnPawnEnemyChance".Translate(Settings.IncidentChanceForSpanwedPawnEnemy), -1,
+                "SpWo.SpawnPawnEnemyChanceInfo".Translate());
+            Settings.IncidentChanceForSpanwedPawnEnemy = Widgets.HorizontalSlider(listing_Standard.GetRect(20),
+                Settings.IncidentChanceForSpanwedPawnEnemy, 0, 100f, false, "SpWo.Chance".Translate(), null,
+                null, 0.01f);
+        }
+
+        listing_Standard.Gap();
+        listing_Standard.CheckboxLabeled("SpWo.SpawnPawnAlly".Translate(),
+            ref Settings.ApplyToAllSpawnedPawnsAlly, "SpWo.SpawnPawnAllyInfo".Translate());
+        if (Settings.ApplyToAllSpawnedPawnsAlly)
+        {
+            listing_Standard.Label(
+                "SpWo.SpawnPawnAllyChance".Translate(Settings.IncidentChanceForSpanwedPawnAlly), -1,
+                "SpWo.SpawnPawnAllyChanceInfo".Translate());
+            Settings.IncidentChanceForSpanwedPawnAlly = Widgets.HorizontalSlider(listing_Standard.GetRect(20),
+                Settings.IncidentChanceForSpanwedPawnAlly, 0, 100f, false, "SpWo.Chance".Translate(), null, null,
+                0.01f);
+        }
+
+        listing_Standard.Gap();
+        listing_Standard.CheckboxLabeled("SpWo.ApplyToOnlyHumanlike".Translate(),
+            ref Settings.ApplyToOnlyHumanlike, "SpWo.ApplyToOnlyHumanlikeInfo".Translate());
+
+
+        listing_Standard.Gap();
+        listing_Standard.CheckboxLabeled("SpWo.PreventInfectSource".Translate(),
+            ref Settings.BlockReInfectingTheSource, "SpWo.PreventInfectSourceInfo".Translate());
+
+        listing_Standard.Gap();
+        listing_Standard.Label("SpWo.ChanceOfInfectionBite".Translate(Settings.ChanceOfInfectionBite), -1,
+            "SpWo.ChanceOfInfectionBiteInfo".Translate());
+        Settings.ChanceOfInfectionBite = Widgets.HorizontalSlider(listing_Standard.GetRect(20),
+            Settings.ChanceOfInfectionBite, 0, 100f, false, "SpWo.Chance".Translate(), null, null, 0.01f);
+
+
         if (currentVersion != null)
         {
             listing_Standard.Gap();
@@ -74,7 +101,11 @@ internal class ScuttlebugsMod : Mod
         }
 
         listing_Standard.End();
-        settings.Write();
-        settings.ChangeDef();
+    }
+
+    public override void WriteSettings()
+    {
+        base.WriteSettings();
+        Settings.ChangeDef();
     }
 }

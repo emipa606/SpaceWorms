@@ -18,7 +18,7 @@ public class Verb_ScuttlebugDamage : Verb_MeleeAttackDamage
         var damDef = verbProps.meleeDamageDef;
         BodyPartGroupDef bodyPartGroupDef = null;
         HediffDef hediffDef = null;
-        damAmount = Rand.Range(damAmount * 0.8f, damAmount * 1.2f);
+        damAmount = Rand.Range(damAmount * MeleeDamageRandomFactorMin, damAmount * MeleeDamageRandomFactorMax);
         if (base.CasterIsPawn)
         {
             bodyPartGroupDef = verbProps.AdjustedLinkedBodyPartsGroup(tool);
@@ -69,8 +69,7 @@ public class Verb_ScuttlebugDamage : Verb_MeleeAttackDamage
 
         foreach (var extraDamage in extraDamages)
         {
-            var extraDamageAmount =
-                GenMath.RoundRandom(extraDamage.AdjustedDamageAmount(this, base.CasterPawn));
+            var extraDamageAmount = GenMath.RoundRandom(extraDamage.AdjustedDamageAmount(this, base.CasterPawn));
             var extraDamageArmorPenetration = extraDamage.AdjustedArmorPenetration(this, base.CasterPawn);
             def = extraDamage.def;
             num2 = extraDamageAmount;

@@ -2,6 +2,20 @@
 <LanguageData>
   <SpWo.BaseChance>Space Worms incident base-chance: {0}</SpWo.BaseChance>
   <SpWo.BaseChanceInfo>Default value is 1.5</SpWo.BaseChanceInfo>
+  <SpWo.SpawnPawnEnemy>Enable Spawning Infections in Generated Enemies</SpWo.SpawnPawnEnemy>
+  <SpWo.SpawnPawnAlly>Enable Spawning Infections in Generated Allies</SpWo.SpawnPawnAlly>
+  <SpWo.SpawnPawnEnemyInfo>This gives a random chance for enemies in raids to already be infected</SpWo.SpawnPawnEnemyInfo>
+  <SpWo.SpawnPawnAllyInfo>This gives a random chance for trader or visitor to already be infected</SpWo.SpawnPawnAllyInfo>
+  <SpWo.SpawnPawnEnemyChance>The chance an enemy will be infected on spawn: {0}</SpWo.SpawnPawnEnemyChance>
+  <SpWo.SpawnPawnEnemyChanceInfo>Default value is 5.0</SpWo.SpawnPawnEnemyChanceInfo>
+  <SpWo.SpawnPawnAllyChance>The chance a trader or visitor will be infected on spawn: {0}</SpWo.SpawnPawnAllyChance>
+  <SpWo.SpawnPawnAllyChanceInfo>Default value is 2.5</SpWo.SpawnPawnAllyChanceInfo>
+  <SpWo.ApplyToOnlyHumanlike>Allow Infecting non humanlike pawns</SpWo.ApplyToOnlyHumanlike>
+  <SpWo.ApplyToOnlyHumanlikeInfo>Allows infection on animals, insects, etc anything other than a mech or itself</SpWo.ApplyToOnlyHumanlikeInfo>
+  <SpWo.PreventInfectSource>Prevent Re-Infecting the Source of the Worm</SpWo.PreventInfectSource>
+  <SpWo.PreventInfectSourceInfo>This fixes worms spawning and instantly re-targeting the host causing them to stay infected, its only needed if bite infection rate is 100%</SpWo.PreventInfectSourceInfo>
+  <SpWo.ChanceOfInfectionBite>The chance worm attacks will infect the target: {0}</SpWo.ChanceOfInfectionBite>
+  <SpWo.ChanceOfInfectionBiteInfo>The original mod this is 100%, but this allows configuring the worm to have etc 25% chance to infect each time it attacks a target</SpWo.ChanceOfInfectionBiteInfo>
   <SpWo.Chance>Chance</SpWo.Chance>
   <SpWo.CurrentModVersion>Installed mod-version: {0}</SpWo.CurrentModVersion>
 </LanguageData>
