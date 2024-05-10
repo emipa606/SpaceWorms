@@ -1,18 +1,22 @@
-# SpaceWorms
+# [Space Worms (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2105322804)
 
 ![Image](https://i.imgur.com/buuPQel.png)
-
 Update of Demeggys mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1078857582
 
 - Added mod-setting for changing the incident basechance
-- For a higher quality texture, try  https://steamcommunity.com/sharedfiles/filedetails/?id=2739609830] Mashed Space Worms Re-texture by SirMashedPotato
+- For a higher quality texture, try [ https://steamcommunity.com/sharedfiles/filedetails/?id=2739609830]( Mashed Space Worms Re-texture) by SirMashedPotato
+- No longer infects mech types
+
+The following options added by Ferris:
+- Option for infection chance rather than being 100% on hit
+- Option to spawn raiders/visitors as infected when they arrive
+- Option for ensuring the worm does not re-infect the same pawn
+- Option for allowing infection on non humans
 
 ![Image](https://i.imgur.com/pufA0kM.png)
-
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
-
 
 Rimworld Build: 1.0
 
@@ -51,16 +55,14 @@ Known Bugs/Incompatibilities:
 ![Image](https://i.imgur.com/PwoNOj4.png)
 
 
-
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib or the standalone https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader and command Ctrl+F12
+-  Post your error-log using [https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] or the standalone [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404](Uploader) and command Ctrl+F12
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
--  Use https://github.com/RimSort/RimSort/releases/latest]RimSort to sort your mods
+-  Use [https://github.com/RimSort/RimSort/releases/latest](RimSort) to sort your mods
 
 
 
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2105322804]![Image](https://img.shields.io/github/v/release/emipa606/SpaceWorms?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
-
+[https://steamcommunity.com/sharedfiles/filedetails/changelog/2105322804]![Image]((https://img.shields.io/github/v/release/emipa606/SpaceWorms?label=latest%20version&style=plastic&color=9f1111&labelColor=black))

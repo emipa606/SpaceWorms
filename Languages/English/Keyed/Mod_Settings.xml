@@ -10,8 +10,8 @@
   <SpWo.SpawnPawnEnemyChanceInfo>Default value is 5.0</SpWo.SpawnPawnEnemyChanceInfo>
   <SpWo.SpawnPawnAllyChance>The chance a trader or visitor will be infected on spawn: {0}</SpWo.SpawnPawnAllyChance>
   <SpWo.SpawnPawnAllyChanceInfo>Default value is 2.5</SpWo.SpawnPawnAllyChanceInfo>
-  <SpWo.ApplyToOnlyHumanlike>Allow Infecting non humanlike pawns</SpWo.ApplyToOnlyHumanlike>
-  <SpWo.ApplyToOnlyHumanlikeInfo>Allows infection on animals, insects, etc anything other than a mech or itself</SpWo.ApplyToOnlyHumanlikeInfo>
+  <SpWo.ApplyToOnlyHumanlike>Allow infecting humanlike pawns only</SpWo.ApplyToOnlyHumanlike>
+  <SpWo.ApplyToOnlyHumanlikeInfo>Does not allow infection on animals, insects, etc anything other than humanlike pawns</SpWo.ApplyToOnlyHumanlikeInfo>
   <SpWo.PreventInfectSource>Prevent Re-Infecting the Source of the Worm</SpWo.PreventInfectSource>
   <SpWo.PreventInfectSourceInfo>This fixes worms spawning and instantly re-targeting the host causing them to stay infected, its only needed if bite infection rate is 100%</SpWo.PreventInfectSourceInfo>
   <SpWo.ChanceOfInfectionBite>The chance worm attacks will infect the target: {0}</SpWo.ChanceOfInfectionBite>

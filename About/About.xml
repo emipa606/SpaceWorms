@@ -20,6 +20,13 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1078857582
 
 - Added mod-setting for changing the incident basechance
 - For a higher quality texture, try [url= https://steamcommunity.com/sharedfiles/filedetails/?id=2739609830] Mashed Space Worms Re-texture[/url] by SirMashedPotato
+- No longer infects mech types
+
+The following options added by Ferris:
+- Option for infection chance rather than being 100% on hit
+- Option to spawn raiders/visitors as infected when they arrive
+- Option for ensuring the worm does not re-infect the same pawn
+- Option for allowing infection on non humans
 
 [img]https://i.imgur.com/pufA0kM.png[/img]
 
@@ -82,5 +89,5 @@ Known Bugs/Incompatibilities:
 [/list]
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2105322804][img]https://img.shields.io/github/v/release/emipa606/SpaceWorms?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url]</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.5.1</modVersion>
+  <modVersion IgnoreIfNoMatchingField="True">1.5.2</modVersion>
 </ModMetaData>

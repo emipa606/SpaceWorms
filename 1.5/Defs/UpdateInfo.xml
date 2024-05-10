@@ -1,18 +1,17 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<TabulaRasa.UpdateDef Abstract="true" Name="SpaceWorms_UpdateInfoBase">
-		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2105322804</linkUrl>
-		<banner>UpdateInfo/SpaceWorms</banner>
-	</TabulaRasa.UpdateDef>
-	<TabulaRasa.UpdateDef ParentName="SpaceWorms_UpdateInfoBase">
-		<defName>SpaceWorms_1_5_0</defName>
-		<date>2024/4/24</date>
-		<content>This update brings lots of added mod-settings, thanks to the contribution from Ferris.
+  <TabulaRasa.UpdateDef Abstract="true" Name="SpaceWorms_UpdateInfoBase">
+    <linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2105322804</linkUrl>
+    <banner>UpdateInfo/SpaceWorms</banner>
+  </TabulaRasa.UpdateDef>
+  <TabulaRasa.UpdateDef ParentName="SpaceWorms_UpdateInfoBase">
+    <defName>SpaceWorms_1_5_0</defName>
+    <date>2024/4/24</date>
+    <content>This update brings lots of added mod-settings, thanks to the contribution from Ferris.
 - No longer infects mech types
 - Option for infection chance rather than being 100% on hit
 - Option to spawn raiders/visitors as infected when they arrive
 - Option for ensuring the worm does not re-infect the same pawn
 - Option for allowing infection on non humans</content>
-	</TabulaRasa.UpdateDef>
+  </TabulaRasa.UpdateDef>
 </Defs>
-

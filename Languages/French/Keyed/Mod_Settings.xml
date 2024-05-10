@@ -13,10 +13,10 @@
   <SpWo.SpawnPawnEnemyChanceInfo>La valeur par défaut est 5.0</SpWo.SpawnPawnEnemyChanceInfo>
   <SpWo.SpawnPawnAllyChance>La probabilité qu'un commerçant ou un visiteur soit infecté au moment de l'apparition : {0}</SpWo.SpawnPawnAllyChance>
   <SpWo.SpawnPawnAllyChanceInfo>La valeur par défaut est de 2,5</SpWo.SpawnPawnAllyChanceInfo>
-  <SpWo.ApplyToOnlyHumanlike>Autoriser l'infection des pions non humains</SpWo.ApplyToOnlyHumanlike>
-  <SpWo.ApplyToOnlyHumanlikeInfo>Permet l'infection d'animaux, d'insectes, etc. tout ce qui n'est pas un mécha ou lui-même.</SpWo.ApplyToOnlyHumanlikeInfo>
   <SpWo.PreventInfectSource>Éviter de réinfecter la source du ver</SpWo.PreventInfectSource>
   <SpWo.PreventInfectSourceInfo>Ceci corrige le fait que les vers se reproduisent et reciblent instantanément l'hôte, ce qui fait qu'il reste infecté. Ceci n'est nécessaire que si le taux d'infection par morsure est de 100 %.</SpWo.PreventInfectSourceInfo>
   <SpWo.ChanceOfInfectionBite>La probabilité que les attaques du ver infectent la cible : {0}</SpWo.ChanceOfInfectionBite>
   <SpWo.ChanceOfInfectionBiteInfo>Dans le mod original, ce taux est de 100%, mais ceci permet de configurer le ver pour qu'il ait 25% de chances d'infecter à chaque fois qu'il attaque une cible.</SpWo.ChanceOfInfectionBiteInfo>
+  <SpWo.ApplyToOnlyHumanlike>Autoriser l'infection des pions de type humain uniquement</SpWo.ApplyToOnlyHumanlike>
+  <SpWo.ApplyToOnlyHumanlikeInfo>Ne permet pas l'infection d'animaux, d'insectes, etc. autres que des pions de type humain.</SpWo.ApplyToOnlyHumanlikeInfo>
 </LanguageData>

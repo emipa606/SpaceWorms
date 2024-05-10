@@ -13,10 +13,10 @@
   <SpWo.SpawnPawnEnemyChanceInfo>Der Standardwert ist 5,0</SpWo.SpawnPawnEnemyChanceInfo>
   <SpWo.SpawnPawnAllyChance>Die Wahrscheinlichkeit, dass ein Händler oder Besucher beim Spawnen infiziert wird: {0}</SpWo.SpawnPawnAllyChance>
   <SpWo.SpawnPawnAllyChanceInfo>Standardwert ist 2,5</SpWo.SpawnPawnAllyChanceInfo>
-  <SpWo.ApplyToOnlyHumanlike>Infizieren von nicht menschenähnlichen Spielfiguren zulassen</SpWo.ApplyToOnlyHumanlike>
-  <SpWo.ApplyToOnlyHumanlikeInfo>Erlaubt die Infektion von Tieren, Insekten usw., die nicht zu einem Mech oder zu sich selbst gehören</SpWo.ApplyToOnlyHumanlikeInfo>
   <SpWo.PreventInfectSource>Verhindern Sie eine erneute Infektion der Wurmquelle</SpWo.PreventInfectSource>
   <SpWo.PreventInfectSourceInfo>Dies behebt Würmer laichen und sofort wieder Ziel der Host verursacht sie infiziert zu bleiben, ist nur erforderlich, wenn Biss Infektionsrate ist 100%</SpWo.PreventInfectSourceInfo>
   <SpWo.ChanceOfInfectionBite>Die Wahrscheinlichkeit, dass Wurmangriffe das Ziel infizieren: {0}</SpWo.ChanceOfInfectionBite>
   <SpWo.ChanceOfInfectionBiteInfo>Die Original-Mod ist 100%, aber dies ermöglicht die Konfiguration der Wurm zu haben etc 25% Chance zu infizieren jedes Mal, wenn er ein Ziel angreift</SpWo.ChanceOfInfectionBiteInfo>
+  <SpWo.ApplyToOnlyHumanlike>Nur die Infektion von menschenähnlichen Spielfiguren zulassen</SpWo.ApplyToOnlyHumanlike>
+  <SpWo.ApplyToOnlyHumanlikeInfo>Erlaubt keine Infektion von Tieren, Insekten usw., die keine menschenähnlichen Spielfiguren sind</SpWo.ApplyToOnlyHumanlikeInfo>
 </LanguageData>
