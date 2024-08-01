@@ -1,5 +1,8 @@
 # Changelog for SpaceWorms
 
+1.5.3 - Updated textures, thanks to SirMashedPotato for allowing them to be used!
+
+
 1.5.2 - Inverted options-text fixed
 Used DeepL to update translations for ChineseSimplified, French, German, Russian
 
