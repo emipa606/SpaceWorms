@@ -9,7 +9,7 @@ namespace Scuttlebugs;
 [HarmonyPatch(typeof(PawnGenerator), nameof(PawnGenerator.GeneratePawn), typeof(PawnGenerationRequest))]
 public class PawnGenerator_GeneratePawn
 {
-    private static bool ShouldApply(Pawn pawn)
+    private static bool shouldApply(Pawn pawn)
     {
         if (pawn == null || Current.Game == null || pawn.IsPlayerControlled || pawn.Dead || pawn.IsAwokenCorpse ||
             pawn.RaceProps is { IsMechanoid: true })
@@ -31,28 +31,28 @@ public class PawnGenerator_GeneratePawn
         if (pawn.HostileTo(Find.FactionManager.OfPlayer)) // Enemy Pawns
         {
             if (!ScuttlebugsMod.Instance.Settings.ApplyToAllSpawnedPawnsEnemy &&
-                ScuttlebugsMod.Instance.Settings.IncidentChanceForSpanwedPawnEnemy > 0)
+                ScuttlebugsMod.Instance.Settings.IncidentChanceForSpawnedPawnEnemy > 0)
             {
                 return false;
             }
 
             return Rand.Chance(Math.Max(0.01f,
-                ScuttlebugsMod.Instance.Settings.IncidentChanceForSpanwedPawnEnemy / 100f));
+                ScuttlebugsMod.Instance.Settings.IncidentChanceForSpawnedPawnEnemy / 100f));
         }
 
         // Allied or friendly pawns
         if (!ScuttlebugsMod.Instance.Settings.ApplyToAllSpawnedPawnsAlly &&
-            ScuttlebugsMod.Instance.Settings.IncidentChanceForSpanwedPawnAlly > 0)
+            ScuttlebugsMod.Instance.Settings.IncidentChanceForSpawnedPawnAlly > 0)
         {
             return false;
         }
 
-        return Rand.Chance(Math.Max(0.01f, ScuttlebugsMod.Instance.Settings.IncidentChanceForSpanwedPawnAlly / 100f));
+        return Rand.Chance(Math.Max(0.01f, ScuttlebugsMod.Instance.Settings.IncidentChanceForSpawnedPawnAlly / 100f));
     }
 
     public static void Postfix(ref Pawn __result)
     {
-        if (!ShouldApply(__result))
+        if (!shouldApply(__result))
         {
             return;
         }

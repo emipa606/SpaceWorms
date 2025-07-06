@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingNaturalBase">
+    <defName>ScuttlebugQueen</defName>
+    <label>Queen Worm</label>
+    <description>A Queen Space Worm, immobile, constantly generating broods of Space Worm larvae</description>
+    <thingClass>Scuttlebugs.QueenWorm</thingClass>
+    <graphicData>
+      <texPath>Things/Pawn/Scuttlebug/WormQueen</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.6</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <fillPercent>0.60</fillPercent>
+    <statBases>
+      <MaxHitPoints>750</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <tickerType>Rare</tickerType>
+    <passability>PassThroughOnly</passability>
+    <comps>
+      <li Class="CompProperties_SpawnerHives" />
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>ScuttlebugLarvae</thingToSpawn>
+        <spawnCount>4</spawnCount>
+        <spawnIntervalRange>
+          <min>10000</min>
+          <max>20000</max>
+        </spawnIntervalRange>
+        <spawnMaxAdjacent>40</spawnMaxAdjacent>
+        <spawnForbidden>true</spawnForbidden>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>7</heatPerSecond>
+        <heatPushMaxTemperature>38</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_TemperatureDamaged">
+        <safeTemperatureRange>
+          <min>-10</min>
+          <max>50</max>
+        </safeTemperatureRange>
+        <damagePerTickRare>8</damagePerTickRare>
+      </li>
+      <li Class="CompProperties_SpawnerFilth">
+        <filthDef>Filth_Slime</filthDef>
+        <spawnCountOnSpawn>10</spawnCountOnSpawn>
+        <spawnMtbHours>4</spawnMtbHours>
+        <spawnRadius>5</spawnRadius>
+      </li>
+      <li Class="CompProperties_Maintainable">
+        <ticksHealthy>60000</ticksHealthy>
+        <ticksNeedsMaintenance>40000</ticksNeedsMaintenance>
+        <damagePerTickRare>10</damagePerTickRare>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

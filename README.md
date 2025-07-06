@@ -6,7 +6,8 @@ Update of Demeggys mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1078857582
 
 - Added mod-setting for changing the incident basechance
-- For a higher quality texture, try [ Mashed Space Worms Re-texture]( https://steamcommunity.com/sharedfiles/filedetails/?id=2739609830) by SirMashedPotato
+- ~~For a higher quality texture, try [ Mashed Space Worms Re-texture]( https://steamcommunity.com/sharedfiles/filedetails/?id=2739609830) by SirMashedPotato~~
+Now included in the mod, thanks SirMashedPotato for allowing it!
 - No longer infects mech types
 
 The following options added by Ferris:
@@ -65,6 +66,6 @@ Known Bugs/Incompatibilities:
 -  If you have the solution for a problem, please post it to the GitHub repository.
 -  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
+ 
 
-
-[![Image](https://img.shields.io/github/v/release/emipa606/SpaceWorms?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2105322804)
+[![Image](https://img.shields.io/github/v/release/emipa606/SpaceWorms?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2105322804) | tags:  alien, parasite

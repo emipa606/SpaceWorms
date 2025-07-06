@@ -11,7 +11,7 @@ public class Verb_ScuttlebugDamage : Verb_MeleeAttackDamage
 
     private const float MeleeDamageRandomFactorMax = 1.2f;
 
-    private IEnumerable<DamageInfo> DamageInfosToApply(LocalTargetInfo target)
+    private IEnumerable<DamageInfo> damageInfosToApply(LocalTargetInfo target)
     {
         var damAmount = verbProps.AdjustedMeleeDamageAmount(this, base.CasterPawn);
         var armorPenetration = verbProps.AdjustedArmorPenetration(this, base.CasterPawn);
@@ -43,12 +43,12 @@ public class Verb_ScuttlebugDamage : Verb_MeleeAttackDamage
         var num = damAmount;
         var num2 = armorPenetration;
         var instigator = caster;
-        var mainDinfo = new DamageInfo(def, num, num2, -1f, instigator, null, source);
-        mainDinfo.SetBodyRegion(BodyPartHeight.Undefined, BodyPartDepth.Outside);
-        mainDinfo.SetWeaponBodyPartGroup(bodyPartGroupDef);
-        mainDinfo.SetWeaponHediff(hediffDef);
-        mainDinfo.SetAngle(direction);
-        yield return mainDinfo;
+        var damageInfo = new DamageInfo(def, num, num2, -1f, instigator, null, source);
+        damageInfo.SetBodyRegion(BodyPartHeight.Undefined, BodyPartDepth.Outside);
+        damageInfo.SetWeaponBodyPartGroup(bodyPartGroupDef);
+        damageInfo.SetWeaponHediff(hediffDef);
+        damageInfo.SetAngle(direction);
+        yield return damageInfo;
         if (!surpriseAttack ||
             (verbProps.surpriseAttack == null || verbProps.surpriseAttack.extraMeleeDamages.NullOrEmpty()) &&
             (tool?.surpriseAttack == null || tool.surpriseAttack.extraMeleeDamages.NullOrEmpty()))
@@ -75,19 +75,19 @@ public class Verb_ScuttlebugDamage : Verb_MeleeAttackDamage
             num2 = extraDamageAmount;
             num = extraDamageArmorPenetration;
             instigator = caster;
-            var extraDinfo = new DamageInfo(def, num2, num, -1f, instigator, null, source);
-            extraDinfo.SetBodyRegion(BodyPartHeight.Undefined, BodyPartDepth.Outside);
-            extraDinfo.SetWeaponBodyPartGroup(bodyPartGroupDef);
-            extraDinfo.SetWeaponHediff(hediffDef);
-            extraDinfo.SetAngle(direction);
-            yield return extraDinfo;
+            var extraDamageInfo = new DamageInfo(def, num2, num, -1f, instigator, null, source);
+            extraDamageInfo.SetBodyRegion(BodyPartHeight.Undefined, BodyPartDepth.Outside);
+            extraDamageInfo.SetWeaponBodyPartGroup(bodyPartGroupDef);
+            extraDamageInfo.SetWeaponHediff(hediffDef);
+            extraDamageInfo.SetAngle(direction);
+            yield return extraDamageInfo;
         }
     }
 
     protected override DamageWorker.DamageResult ApplyMeleeDamageToTarget(LocalTargetInfo target)
     {
         var result = new DamageWorker.DamageResult();
-        foreach (var current in DamageInfosToApply(target))
+        foreach (var current in damageInfosToApply(target))
         {
             if (target.ThingDestroyed)
             {

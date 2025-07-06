@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Parasitic Infection -->
+  <ScuttlebugInfection.label>Parasitic Infection</ScuttlebugInfection.label>
+  <!-- EN: Parasitic Infection -->
+  <ScuttlebugInfection.description>Parasitic Infection</ScuttlebugInfection.description>
+  <!-- EN: Blistered skin -->
+  <ScuttlebugQueenInfection.label>Blistered skin</ScuttlebugQueenInfection.label>
+  <!-- EN: Blistered skin -->
+  <ScuttlebugQueenInfection.description>Blistered skin</ScuttlebugQueenInfection.description>
+</LanguageData>

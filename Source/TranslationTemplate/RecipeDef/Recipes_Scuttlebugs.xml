@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: extract larvae -->
+  <ExtractScuttlebug.label>extract larvae</ExtractScuttlebug.label>
+  <!-- EN: Surgically removes Space Worm larvae from the host. -->
+  <ExtractScuttlebug.description>Surgically removes Space Worm larvae from the host.</ExtractScuttlebug.description>
+  <!-- EN: Extracting larvae. -->
+  <ExtractScuttlebug.jobString>Extracting larvae.</ExtractScuttlebug.jobString>
+  <!-- EN: {0} has successfully extracted {1}'s larvae. -->
+  <ExtractScuttlebug.successfullyRemovedHediffMessage>{0} has successfully extracted {1}'s larvae.</ExtractScuttlebug.successfullyRemovedHediffMessage>
+  <!-- EN: implant larvae -->
+  <ImplantScuttlebug.label>implant larvae</ImplantScuttlebug.label>
+  <!-- EN: Implants Space Worm Larvae into Host. -->
+  <ImplantScuttlebug.description>Implants Space Worm Larvae into Host.</ImplantScuttlebug.description>
+  <!-- EN: Implanting Space Worm larvae. -->
+  <ImplantScuttlebug.jobString>Implanting Space Worm larvae.</ImplantScuttlebug.jobString>
+</LanguageData>

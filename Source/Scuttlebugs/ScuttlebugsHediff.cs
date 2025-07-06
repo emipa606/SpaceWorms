@@ -11,7 +11,7 @@ public class ScuttlebugsHediff : HediffWithComps
 
     public override bool Visible => Scuttlebugs_DefOf.ScuttlebugsBiology.IsFinished;
 
-    public static void SpawnScuttlebug(Pawn pawn)
+    private static void SpawnScuttlebug(Pawn pawn)
     {
         var torso = pawn.health.hediffSet.GetNotMissingParts().First(bpr => bpr.def == BodyPartDefOf.Torso);
 
@@ -21,8 +21,8 @@ public class ScuttlebugsHediff : HediffWithComps
         {
             for (var i = 0; i < noWorms; i++)
             {
-                var scuttlebug = Scuttlebugs_DefOf.Scuttlebug;
-                var newPawn = PawnGenerator.GeneratePawn(scuttlebug);
+                var scuttleBug = Scuttlebugs_DefOf.Scuttlebug;
+                var newPawn = PawnGenerator.GeneratePawn(scuttleBug);
                 if (newPawn is ScuttleBugClass worm) // Set the "Source" of this bug
                 {
                     worm.cause = pawn;

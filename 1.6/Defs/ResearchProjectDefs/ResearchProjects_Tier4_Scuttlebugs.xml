@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>ScuttlebugsBiology</defName>
+    <label>Xenobiology</label>
+    <description>Identifies pathogens and biological lifeforms non-native to the current RimWorld</description>
+    <baseCost>1600</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>MultiAnalyzer</li>
+      <li>HospitalBed</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>14.00</researchViewX>
+    <researchViewY>4.30</researchViewY>
+  </ResearchProjectDef>
+</Defs>

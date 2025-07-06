@@ -1,5 +1,8 @@
 # Changelog for SpaceWorms
 
+1.6.0 - Mod updated for 1.6 and passed autotests
+
+
 1.5.3 - Updated textures, thanks to SirMashedPotato for allowing them to be used!
 
 

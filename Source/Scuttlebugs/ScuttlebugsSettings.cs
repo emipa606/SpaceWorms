@@ -15,8 +15,8 @@ internal class ScuttlebugsSettings : ModSettings
     public bool BlockReInfectingTheSource = true;
     public float ChanceOfInfectionBite = 25;
     public float IncidentChance = 1.5f;
-    public float IncidentChanceForSpanwedPawnAlly = 2.5f;
-    public float IncidentChanceForSpanwedPawnEnemy = 5.0f;
+    public float IncidentChanceForSpawnedPawnAlly = 2.5f;
+    public float IncidentChanceForSpawnedPawnEnemy = 5.0f;
 
 
     public void ChangeDef()
@@ -38,8 +38,8 @@ internal class ScuttlebugsSettings : ModSettings
     {
         base.ExposeData();
         Scribe_Values.Look(ref IncidentChance, "IncidentChance", 1.5f);
-        Scribe_Values.Look(ref IncidentChanceForSpanwedPawnEnemy, "IncidentChanceForSpanwedPawnEnemy", 15f);
-        Scribe_Values.Look(ref IncidentChanceForSpanwedPawnAlly, "IncidentChanceForSpanwedPawnAlly", 15f);
+        Scribe_Values.Look(ref IncidentChanceForSpawnedPawnEnemy, "IncidentChanceForSpanwedPawnEnemy", 15f);
+        Scribe_Values.Look(ref IncidentChanceForSpawnedPawnAlly, "IncidentChanceForSpanwedPawnAlly", 15f);
         Scribe_Values.Look(ref ChanceOfInfectionBite, "ChanceOfInfectionBite", 25f);
         Scribe_Values.Look(ref BlockReInfectingTheSource, "BlockReInfectingTheSource", true);
         Scribe_Values.Look(ref ApplyToAllSpawnedPawnsEnemy, "ApplyToAllSpawnedPawnsEnemy", true);

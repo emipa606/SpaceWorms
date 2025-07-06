@@ -1,14 +1,12 @@
 using RimWorld.Planet;
-using Verse;
 
 namespace Scuttlebugs;
 
 internal class WorldComp(World world) : WorldComponent(world)
 {
-    public override void FinalizeInit()
+    public override void FinalizeInit(bool fromLoad)
     {
-        base.FinalizeInit();
-        Log.Message("Space Worms - Settings loaded");
+        base.FinalizeInit(fromLoad);
         ScuttlebugsMod.Instance.Settings.ChangeDef();
     }
 }

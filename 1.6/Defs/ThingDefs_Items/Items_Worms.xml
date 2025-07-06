@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>ScuttlebugLarvae</defName>
+    <label>Space Worm larvae</label>
+    <description>The larvae of the terrifying Space Worm; this dormant sack of fertilised proteins will only gestate once impregnated within a host human body.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Scuttlebug/wormLarvae</texPath>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>50.0</MarketValue>
+      <Mass>0.025</Mass>
+    </statBases>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>ScuttlebugQueenLarvae</defName>
+    <label>Worm Queen larvae</label>
+    <description>The Queen Larvae of the terrifying Space Worm; this dormant sack of fertilised proteins will only gestate once impregnated within a host human body. At full gestation it will violently convert the Host into a docile, self-reproducing Worm Queen.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Scuttlebug/queenLarvae</texPath>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>125.0</MarketValue>
+      <Mass>0.025</Mass>
+    </statBases>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+    </thingCategories>
+  </ThingDef>
+</Defs>

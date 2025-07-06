@@ -12,7 +12,7 @@ public class IncidentWorker_ScuttlebugPodCrash : IncidentWorker
         var map = (Map)parms.target;
         var things = ThingSetMakerDefOf.RefugeePod.root.Generate();
         var intVec = DropCellFinder.RandomDropSpot(map);
-        var pawn = FindPawn(things);
+        var pawn = findPawn(things);
         pawn.guest.getRescuedThoughtOnUndownedBecauseOfPlayer = true;
         var label = "LetterLabelRefugeePodCrash".Translate();
         var text = "RefugeePodCrash".Translate(pawn.Named("PAWN")).AdjustedFor(pawn);
@@ -32,7 +32,7 @@ public class IncidentWorker_ScuttlebugPodCrash : IncidentWorker
 
         PawnRelationUtility.TryAppendRelationsWithColonistsInfo(ref text, ref label, pawn);
         Find.LetterStack.ReceiveLetter(label, text, LetterDefOf.NeutralEvent, new TargetInfo(intVec, map));
-        var activeDropPodInfo = new ActiveDropPodInfo();
+        var activeDropPodInfo = new ActiveTransporterInfo();
         activeDropPodInfo.innerContainer.TryAddRangeOrTransfer(things);
         activeDropPodInfo.openDelay = 180;
         activeDropPodInfo.leaveSlag = true;
@@ -46,7 +46,7 @@ public class IncidentWorker_ScuttlebugPodCrash : IncidentWorker
         return true;
     }
 
-    private Pawn FindPawn(List<Thing> things)
+    private static Pawn findPawn(List<Thing> things)
     {
         foreach (var thing in things)
         {
