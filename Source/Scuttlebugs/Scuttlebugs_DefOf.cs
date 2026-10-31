@@ -4,7 +4,7 @@ using Verse;
 namespace Scuttlebugs;
 
 [DefOf]
-public class Scuttlebugs_DefOf
+public static class Scuttlebugs_DefOf
 {
     public static PawnKindDef Scuttlebug;
     public static HediffDef ScuttlebugInfection;

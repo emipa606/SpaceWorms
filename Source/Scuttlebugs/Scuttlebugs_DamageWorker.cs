@@ -8,14 +8,13 @@ namespace Scuttlebugs;
 public class Scuttlebugs_DamageWorker : DamageWorker
 {
     //public override float Apply(DamageInfo dinfo, Thing thing)
-    public override DamageResult Apply(DamageInfo dinfo, Thing thing)
+    public override DamageResult Apply(DamageInfo dinfo, Thing victim)
     {
-        if (thing is not Pawn pawn)
+        if (victim is not Pawn pawn)
         {
-            return base.Apply(dinfo, thing);
+            return base.Apply(dinfo, victim);
         }
 
-        //return base.Apply(dinfo, thing);
         _ = pawn;
 
         var result = base.Apply(dinfo, pawn);
@@ -27,13 +26,11 @@ public class Scuttlebugs_DamageWorker : DamageWorker
         // Don't re-infect the original cause of this worm!
         if (worm.cause == null)
         {
-            //Log.Message("Skipping infection, worm cause was null, this should never happen other than maybe first tick the worm exists");
             return result;
         }
 
-        if (ScuttlebugsMod.Instance.Settings.BlockReInfectingTheSource && worm.cause == thing)
+        if (ScuttlebugsMod.Instance.Settings.BlockReInfectingTheSource && worm.cause == victim)
         {
-            //Log.Message("Skipping infection, worm cause was self");
             return result;
         }
 
@@ -52,7 +49,6 @@ public class Scuttlebugs_DamageWorker : DamageWorker
         if (ScuttlebugsMod.Instance.Settings.ChanceOfInfectionBite < 100 &&
             !Rand.Chance(Math.Max(0.01f, ScuttlebugsMod.Instance.Settings.ChanceOfInfectionBite / 100f)))
         {
-            //Log.Message("Skipping infection, chance failure!");
             return result;
         }
 

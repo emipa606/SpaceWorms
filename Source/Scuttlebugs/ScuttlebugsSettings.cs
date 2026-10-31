@@ -25,10 +25,7 @@ internal class ScuttlebugsSettings : ModSettings
 
         var incidentDef =
             DefDatabase<IncidentDef>.AllDefs.FirstOrDefault(x => x.defName.EqualsIgnoreCase("ScuttlebugPodCrash"));
-        if (incidentDef != null)
-        {
-            incidentDef.baseChance = IncidentChance;
-        }
+        incidentDef?.baseChance = IncidentChance;
     }
 
     /// <summary>
